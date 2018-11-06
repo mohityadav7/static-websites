@@ -1,0 +1,372 @@
+html{font-size: 16px;}
+
+html, body, section{
+  height: 100%;
+  width: 100%;
+}
+
+/* generalized styling */
+.section{
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.t-20{top: 20%;}
+.t-25{top: 25%;}
+.t-30{top: 30%;}
+.t-40{top: 40%;}
+.t-45{top: 45%;}
+.t-50{top: 50%;}
+.t-60{top: 60%;}
+.t-75{top: 75%;}
+.t-85{top: 85%;}
+
+.l-50{left: 50%;}
+
+.mh-35{max-height: 35%;}
+
+.pc-w-75{width: 70%}
+
+.transY-50{
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.transX-50{
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.content-text{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.content-heading{
+  font-size: 2.5rem;
+  font-family: Roboto;
+}
+
+/* first slilde styling */
+.first{
+  background: url(./img/final.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  -webkit-animation: background 15s ease infinite;
+  animation: background 15s ease infinite;
+}
+@-webkit-keyframes background {
+  0% { background-color: #ffa5a5; }
+  25% { background-color: #afffaf; }
+  50% { background-color: #adadff; }
+  100% { background-color: #ffafaf; }
+}
+nav a{
+  font-size: 1.3rem;
+  margin: 0.4rem !important;
+  color: #67b6e6 !important;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+/* Top and Bottom borders come in */
+ul.topBotomBordersIn li a:before, ul.topBotomBordersIn li a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #67b6e6;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+ul.topBotomBordersIn li a:before {
+  top: 0px;
+  transform: translateY(-10px);
+}
+ul.topBotomBordersIn li a:after {
+  bottom: 0px;
+  transform: translateY(10px);
+}
+ul.topBotomBordersIn li a:hover:before, ul.topBotomBordersIn li a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#registerButton{
+  border-radius: 70px;
+  background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 61%, #2cb5e8 75%);
+  border: 0;
+  color: white;
+  font-family: "Open Sans",X-LocaleSpecific,sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+#registerButton:hover {
+  background-color: green;
+}
+
+/* events slide - section 2 styling */
+/* .events{background-color: #ECEFF1;} */
+
+/* ideas slide - section 3 styling */
+.ideas{
+  background: #000;
+  background-size: cover;
+}
+.ideas .content-heading{color: #fac135;}
+.ideas .content-text{color: #fff;}
+
+/* code-eat-code slide - section 4 styling */
+.eat{
+  background: url(./img/fina.png);
+  background-size: cover;
+  background-color: #ECEFF1;
+}
+.eat .content-heading{color: #e10019;}
+
+/* music slide - section 5 styling */
+.music{
+  background: url(./img/slide-3/lifgt.png) repeat-x;
+  background-position: top;
+  background-size: 60%;
+}
+.music .content-heading{color: green;}
+.music .content-text{color: #000;}
+
+/* prizes slide - section 6 styling */
+.prizes{background-color: #ECEFF1;}
+
+
+/* sponsors slide - section 7 styling */
+.spnsrs{
+  height: auto !important;
+}
+#mr-piggy{
+  width: 25%;
+}
+.spnsr-logo{
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* fun slide - section 8 styling */
+.fun{
+  /* background: url(./img/slide-4/flowers.png) no-repeat; */
+  background-position: bottom;
+  background-color: #ECEFF1;
+}
+.fun .content-heading{
+  color: #fa7c04;
+}
+
+/* faqs slide - section 9 styling */
+#faq{
+  height: auto !important;
+}
+.faqs a{
+  color: #666;
+  font-size: 1.1rem;
+}
+.faqs a:hover{
+  text-decoration: none;
+  color: #000;
+}
+.faq .card-body{color: #555;}
+
+/* contact slide - section 10 styling */
+.contact{
+  background: url(img/contactus/wave.png) repeat-x;
+  background-position: top;
+  background-size: 30%;
+  background-color: #ECEFF1;
+}
+.social-icon{
+  height: 120px;
+  width: 120px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+.manan-logo, .ymca-logo{
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+#contactus .content-text{font-size: 1rem !important;}
+#contact-numbers{font-family: 'Raleway', sans-serif;}
+.contact .ymca{font-family: 'Raleway', sans-serif;}
+
+/* scroll icon styling */
+.scroll-down{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  bottom: 0;
+  opacity: 0.4;
+}
+
+.hover-me:hover{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+/* footer */
+footer{
+  color: #ccc;
+  background: #37474F;
+  height: auto;
+  padding: 40px 10px;
+}
+footer a{color: #67b6e6;}
+footer a:hover{
+  color: #00E676;
+  text-decoration: none;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+  .first{background-size: 150%;}
+  .music{background-size: 70%;}
+  .contact{background-size: 40%;}
+}
+@media (max-width: 992px) {
+  .first{background-size: 180%;}
+  .music{background-size: 70%;}
+  .contact{background-size: 50%;}
+}
+@media (max-width: 768px) {
+  nav a{
+    font-size: 1rem;
+    border-bottom: .06rem solid #67b6e6 !important;
+    margin: 0.6rem;
+  }
+  .first{background-size: 200%;}
+  .music{background-size: 110%;}
+  .contact{background-size: 60%;}
+
+  .text-content{
+    text-align: center;
+  }
+  .content-heading{
+    font-size: 1.6rem !important;
+  }
+  .mob-w-100{
+    width: 100% !important;
+  }
+  .pc-t-40{
+    top: 40%;
+  }
+  .social-icon{
+    height: 100px;
+    width: 100px;
+  }
+}
+@media (max-width: 576px) {
+  /* new */
+  .first{background-size: 500%;}
+  .music{background-size: 150%;}
+  .contact{background-size: 100%;}
+
+  .text-content{
+    text-align: center;
+    width: 100% !important;
+  }
+  .content-text{
+    font-size: 1.1rem;
+  }
+  .mob-mw-100{
+    max-width: 100%;
+  }
+  .mob-t-25{
+    top: 25%;
+  }
+  .social-icon{
+    height: 80px;
+    width: 80px;
+  }
+  .scroll-down img{
+    height: 3rem;
+    width: 3rem;
+  }
+  .scroll-down{
+    left: 50%;
+  }
+  #mr-piggy, #trophy, #cal-img{
+    width: 60%;
+  }
+}
+
+
+/* arrow bounce animation */
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
