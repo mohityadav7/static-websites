@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Poppins" rel="stylesheet">
+    <title>Company Name</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="top">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Company</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#students-section">For Students</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#companies-section">For Companies</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#project-section">For Individuals</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#form-modal">Apply</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- /navbar -->
+    </header>
+
+    <!-- Application Modal -->
+    <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="form-modal-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="form-modal-title">Apply For Service</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form onsubmit="return false;" method="post">
+              <div class="form-group">
+                <label for="inputWho">Who do you represent?</label>
+                <select class="custom-select" id="inputWho">
+                  <option selected disabled>Choose</option>
+                  <option value="student">Student</option>
+                  <option value="company" disabled>Company</option>
+                  <option value="individual" disabled>Individual</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="service-select">Select Service</label>
+                <select class="custom-select" id="service-select">
+                  <option selected disabled>Choose</option>
+                  <option value="">Student Training</option>
+                  <option value="">Project Development</option>
+                  <option value="">Internship / Certification</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inputName">Full Name</label>
+                <input autocomplete="off" id="inputName" class="form-control" type="text" name="name" placeholder="John Doe"/>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="inputName">Phone Number</label>
+                <input name="phone" class="form-control" type="text" placeholder="9999999999"/>
+              </div>
+          </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button class="btn btn-primary" type="submit" class="form-control">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section to show all the target audience of services -->
+    <section id="customers-section">
+      <div class="section-heading-container text-center">
+        <div class="section-heading-inner-container">
+          <h2 class="section-heading">What We Offer</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div id="customers">
+          <div class="row no-gutters">
+            <!-- for students -->
+            <div class="col-md-4">
+              <div class="single-customer-content vert-line  text-center">
+                <img src="./images/icons/svg/student.svg" alt="" class="img-center customer-icon">
+                <h3 class="single-customer-title">For Students</h3>
+                <div class="single-customer-services-list-container">
+                  <ul class="single-customer-services-list">
+                    <li>Student Training</li>
+                    <li>Project Development</li>
+                    <li>Certification / Internship</li>
+                  </ul>
+                </div>
+                <div class="text-center"><a href="#students-section" class="btn btn-custom link-btn-center">Know More</a></div>
+              </div>
+            </div>
+            <!-- for companies -->
+            <div class="col-md-4">
+              <div class="single-customer-content vert-line text-center">
+                <img src="./images/icons/svg/company.svg" alt="" class="img-center customer-icon">
+                <h3 class="single-customer-title">For Companies</h3>
+                <div class="single-customer-services-list-container">
+                  <ul class="single-customer-services-list">
+                    <li>Highly Skilled Interns</li>
+                    <li>Employees on contract basis</li>
+                  </ul>
+                </div>
+                <div class="text-center"><a href="#companies-section" class="btn btn-custom link-btn-center">Know More</a></div>
+              </div>
+            </div>
+            <!-- for individuals requiring project -->
+            <div class="col-md-4">
+              <div class="single-customer-content text-center">
+                <img src="./images/icons/svg/individual.svg" alt="" class="img-center customer-icon">
+                <h3 class="single-customer-title">For Individuals</h3>
+                <div class="single-customer-services-list-container">
+                  <ul class="single-customer-services-list">
+                    <li>Project Development</li>
+                  </ul>
+                </div>
+                <div class="text-center"><a href="#project-section" class="btn btn-custom link-btn-center">Know More</a></div>
+              </div>
+            </div> <!-- /.col-md-4 -->
+          </div> <!-- /.row -->
+        </div> <!-- /#customers -->
+      </div> <!-- /.container -->
+    </section>
+
+    <!-- section for services for students -->
+    <section id="students-section">
+      <div class="container">
+        <div class="section-heading-container-2 text-center">
+          <div class="section-heading-inner-container-2">
+            <h2 class="section-heading-2">Services for Students</h2>
+          </div>
+        </div>
+        <div class="student-services-container">
+          <!-- service 1 -->
+          <div class="single-service slideanim">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="services-img-container">
+                  <img class="services-img" src="./images/icons/svg/student-training.svg" alt="">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="student-services-content">
+                  </a><h2 class="services-heading">Student Training</h2>
+                  <p class="student-services-text">​We will provide online training to students on various technologies
+                    and help them to grow themselves by giving them a proper direction and mentor
+                    assistance. After successful completion of training there will be an exam and based on
+                    that exam students will get a certificate.
+                  </p>
+                </div> <!-- /student-services-text -->
+              </div> <!-- /col-md-9 -->
+            </div> <!-- /row -->
+          </div> <!-- /students-single-container -->
+          <!-- service 2 -->
+          <div class="single-service slideanim">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="services-img-container">
+                  <img class="services-img" src="./images/icons/svg/project.svg" alt="">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="student-services-content">
+                  <h2 class="services-heading">Projects</h2>
+                  <p class="student-services-text">One of the biggest issue students face nowadays is choosing a suitable
+                    project that will actually improve their skills and adds a value point in their resume. Even
+                    after finding the project idea most of students are not able to implement it actually so
+                    here we came. We will suggest some good projects to student and provide them online
+                    assistance during development of their project.
+                  </p>
+                </div> <!-- /student-services-text -->
+              </div> <!-- /col-md-9 -->
+            </div> <!-- /row -->
+          </div> <!-- /students-single-container -->
+          <!-- service 3 -->
+          <div class="single-service slideanim">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="services-img-container">
+                  <img class="services-img" src="./images/icons/svg/certificate.svg" alt="">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="student-services-content">
+                  <h2 class="services-heading">Certifications / Internship</h2>
+                  <p class="student-services-text">Working on academics project is good for learning but still
+                    when we go for production level projects we will face many issues while building them
+                    like scalability , security , performance and many more. So we also provide skilled
+                    students an opportunity to work on such projects that will be used by giant techs and
+                    after successful completion of project they will also get an internship certificate from
+                    company.
+                  </p>
+                </div> <!-- /student-services-text -->
+              </div> <!-- /col-md-9 -->
+            </div> <!-- /row -->
+          </div> <!-- /students-single-container -->
+        </div> <!-- /student-services-container -->
+      </div>
+    </section>
+
+    <!-- section for services for companies -->
+    <section id="companies-section">
+      <div class="container">
+        <div class="section-heading-container-2 text-center">
+          <div class="section-heading-inner-container-2">
+            <h2 class="section-heading-2">Services for Companies</h2>
+          </div>
+        </div>
+        <div class="student-services-container">
+          <!-- service 1 -->
+          <div class="single-service slideanim">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="services-img-container">
+                  <img class="services-img" src="./images/icons/svg/skilled.svg" alt="">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="student-services-content">
+                  <h2 class="services-heading">Get Highly Skilled Interns</h2>
+                  <p class="student-services-text">​Now you do not have to waste your time and money in hiring
+                    procedure of interns, we will do this for you. We provide specific training to students and
+                    hence properly skilled students can be easily found out on our platform. So it will make
+                    hiring procedure simple.
+                  </p>
+                </div> <!-- /student-services-text -->
+              </div> <!-- /col-md-9 -->
+            </div> <!-- /row -->
+          </div> <!-- /students-single-container -->
+          <!-- service 2 -->
+          <div class="single-service slideanim">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="services-img-container">
+                  <img class="services-img" src="./images/icons/svg/employees.svg" alt="">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="student-services-content">
+                  <h2 class="services-heading">Get Employee On Contract Basis</h2>
+                  <p class="student-services-text">​Some requirements are only for a while and
+                    hence required such employees for a span of time so we provide employees of specific
+                    skills on contract basis.
+                  </p>
+                </div> <!-- /student-services-text -->
+              </div> <!-- /col-md-9 -->
+            </div> <!-- /row -->
+          </div> <!-- /students-single-container -->
+        </div> <!-- /student-services-container -->
+      </div>
+    </section>
+
+    <!-- section for services for projects -->
+    <section id="project-section">
+      <div class="container">
+        <div class="section-heading-container-2 text-center">
+          <div class="section-heading-inner-container-2">
+            <h2 class="section-heading-2">Services for Individuals</h2>
+          </div>
+        </div>
+        <div class="student-services-container">
+          <!-- service 1 -->
+          <div class="single-service slideanim">
+            <div class="row no-gutters">
+              <div class="col-md-3">
+                <div class="services-img-container">
+                  <img class="services-img" src="./images/icons/svg/project.svg" alt="">
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="student-services-content">
+                  <h2 class="services-heading">Project Development</h2>
+                  <p class="student-services-text">Whether you are running a small business and want to add e-commerce to your
+                    business or you just want some project to be developed then you do not need to visit
+                    freelancer website to get your projects done we will develop your projects at competitive
+                    market price by professionals.
+                  <p>
+                </div> <!-- /student-services-text -->
+              </div> <!-- /col-md-9 -->
+            </div> <!-- /row -->
+          </div> <!-- /students-single-container -->
+        </div> <!-- /student-services-container -->
+      </div>
+    </section>
+
+    <footer>
+      <div class="go-to-top">
+        <img class="arrow-up" src="./images/icons/svg/arrow-up.svg" alt="up arrow">
+      </div>
+      <div class="footer">
+        <div class="container text-center">
+          &copy 2018 Company Pvt. Ltd.
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./script.js"></script>
+  </body>
+</html>
