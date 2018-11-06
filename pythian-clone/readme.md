@@ -1,4 +1,4 @@
-# eservices
+# pythian-clone
 Clone of [Pythian](https://pythian.com/) made during an internship.
 This clone includes 5 main pages namely home, resources, tech, contact and about.
 

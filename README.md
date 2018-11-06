@@ -45,3 +45,9 @@ Simple front-end of a e-commerce website which was not completed.
 * [Admin](https://mohityadav7.github.io/JustFrontEnd/estore/admin.html)
 * [Login](https://mohityadav7.github.io/JustFrontEnd/estore/login.html)
 * [Register](https://mohityadav7.github.io/JustFrontEnd/estore/register.html)
+
+### hacksite
+Frontend of a coding challenge and hackathon hosting webiste.
+Task of the week (Feb 5 - Feb 11) of [CodeShala](http://codeshala.org)'s NodeJs course.
+
+Preview available at https://mohityadav7.github.io/JustFrontEnd/hackerverse/index.html

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hackerverse</title>
+  <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Html-512.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="floating-labels.css">
+</head>
+
+<body>
+  <!-- navbar begins -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+    <a class="navbar-brand" href="#"><img src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/logo/HE_logo.png" width=200px;></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#loginForm">Sign Up/Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav><!-- navbar ends -->
+
+  <!-- body container begins -->
+  <div class="container text-muted">
+    <!-- main row begins -->
+    <div class="row">
+      <!-- main content starts -->
+      <div class="col-md-9">
+        <h1 class="display-4 text-center mt-2">hackerverse</h1>
+        <div class="lead text-center">Lets get better at programming...</div>
+
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide py-5" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="#"><img class="d-block w-100 img-fluid" src="https://hackerearth-media.global.ssl.fastly.net/media/hackathon/february-circuits-18/images/ea8d641ef5-Circuit_Feb_cover.png" alt="First slide"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img class="d-block w-100 img-fluid" src="https://hackerearth-media.global.ssl.fastly.net/media/hackathon/february-sql-challenge-2018/images/60142f30ff-SQL-Feb_cover.jpg" alt="Second slide"></a>
+            </div>
+            <div class="carousel-item">
+              <a href="#"><img class="d-block w-100 img-fluid" src="https://hackerearth-media.global.ssl.fastly.net/media/hackathon/international-women-hackathon-2018/images/c53bfebef9-cover.jpg" alt="Third slide"></a>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- nav -->
+        <nav class="nav nav-pills nav-justified mt-5">
+          <a class="nav-item nav-link active" href="#live-events" data-toggle="tab">Live Contests</a>
+          <a class="nav-item nav-link" href="#upcoming-events" data-toggle="tab">Upcoming</a>
+          <a class="nav-item nav-link" href="#hackathons" data-toggle="tab">Hackathons</a>
+        </nav>
+
+        <div class="tab-content">
+          <!-- Live Contests -->
+          <div class="tab-pane" id="live-events">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://www.codechef.com/download/homepage-banner%20cook%2091.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Clash </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://ceptr.org/images/hackathon-table.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">SQL challenge </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://tse1.mm.bing.net/th?id=OIP.619j74YFrokudNSp84MnZwHaF7&pid=15.1&P=0&w=218&h=175" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Data Hack </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://2.bp.blogspot.com/-WtKVcFBZPMU/WLeTJaIe8kI/AAAAAAAAAGc/7rrOqyx7yyQlPBtT1-nQ2hsabLDAeoigQCPcB/s1600/Hackathon-Event-Banner-01.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Sprint Challenge 1 </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://co-station.com/wp-content/uploads/2017/05/hackathon-graphic.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Golf </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F37204292%2F160311289377%2F1%2Foriginal.jpg?w=1000&rect=52%2C0%2C1610%2C805&s=334ecf41e9082d9798bb143e603aa123" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">February Easy </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://www.contestwingo.com/wp-content/uploads/2017/07/Hacker-Rank-Contest-Code-and-The-Curious-Challenge-Chance-To-Win-Amazing-Prizes.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">February Circuits </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://codeforces.com/predownloaded/69/2f/692fbc6cad6841bc826f93487a3e621d51cdd60d.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Sprint </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://lh3.googleusercontent.com/-0AzhQi-P0f4/VsLkl620myI/AAAAAAAAAV4/P0gFxcD0hoU/w800-h800/CCC-greenHeader_2016-02-02.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Annual Hackathon </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming events -->
+          <div class="tab-pane active" id="upcoming-events">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://www.contestwingo.com/wp-content/uploads/2017/07/Hacker-Rank-Contest-Code-and-The-Curious-Challenge-Chance-To-Win-Amazing-Prizes.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">February Circuits </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://codeforces.com/predownloaded/69/2f/692fbc6cad6841bc826f93487a3e621d51cdd60d.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Sprint </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://lh3.googleusercontent.com/-0AzhQi-P0f4/VsLkl620myI/AAAAAAAAAV4/P0gFxcD0hoU/w800-h800/CCC-greenHeader_2016-02-02.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Annual Hackathon </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://cdn-attachments.timesofmalta.com/technology_04_temp-1384425171-5284a6d3-620x348.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Clash </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://ceptr.org/images/hackathon-table.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">SQL challenge </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://tse1.mm.bing.net/th?id=OIP.619j74YFrokudNSp84MnZwHaF7&pid=15.1&P=0&w=218&h=175" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Data Hack </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://2.bp.blogspot.com/-WtKVcFBZPMU/WLeTJaIe8kI/AAAAAAAAAGc/7rrOqyx7yyQlPBtT1-nQ2hsabLDAeoigQCPcB/s1600/Hackathon-Event-Banner-01.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Sprint Challenge 1 </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://co-station.com/wp-content/uploads/2017/05/hackathon-graphic.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Golf </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F37204292%2F160311289377%2F1%2Foriginal.jpg?w=1000&rect=52%2C0%2C1610%2C805&s=334ecf41e9082d9798bb143e603aa123" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">February Easy </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- Upcoming events ends -->
+
+          <!-- Hackathons -->
+          <div class="tab-pane" id="hackathons">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://2.bp.blogspot.com/-WtKVcFBZPMU/WLeTJaIe8kI/AAAAAAAAAGc/7rrOqyx7yyQlPBtT1-nQ2hsabLDAeoigQCPcB/s1600/Hackathon-Event-Banner-01.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Sprint Hack 1 </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://co-station.com/wp-content/uploads/2017/05/hackathon-graphic.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Golf Hack </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F37204292%2F160311289377%2F1%2Foriginal.jpg?w=1000&rect=52%2C0%2C1610%2C805&s=334ecf41e9082d9798bb143e603aa123" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">February Hackathon </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Start Now</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://cdn-attachments.timesofmalta.com/technology_04_temp-1384425171-5284a6d3-620x348.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Code Clash </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://ceptr.org/images/hackathon-table.jpg" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">SQL Hackathon </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://tse1.mm.bing.net/th?id=OIP.619j74YFrokudNSp84MnZwHaF7&pid=15.1&P=0&w=218&h=175" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Data Hack </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://www.contestwingo.com/wp-content/uploads/2017/07/Hacker-Rank-Contest-Code-and-The-Curious-Challenge-Chance-To-Win-Amazing-Prizes.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">February Hack </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="http://codeforces.com/predownloaded/69/2f/692fbc6cad6841bc826f93487a3e621d51cdd60d.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Sprint Hack </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-lg-4">
+                <div class="card mt-5 text-center mx-2">
+                  <img class="card-img-top img" src="https://lh3.googleusercontent.com/-0AzhQi-P0f4/VsLkl620myI/AAAAAAAAAV4/P0gFxcD0hoU/w800-h800/CCC-greenHeader_2016-02-02.jpg">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#" class="text-dark">Annual Hackathon </a><i class="fas fa-star"></i></h5>
+                    <div class="h6">Ends in:</div>
+                    <div class="mb-3">14:45:34</div>
+                    <a href="#" class="btn btn-success">Register</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- Hackathons ends -->
+        </div> <!-- tab-content ends -->
+
+        <!-- pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center pt-5 pb-3">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav> <!-- pagination ends -->
+      </div> <!-- main content ends -->
+
+      <!-- right sidebar starts -->
+      <div class="col-md-3">
+        <a href="#"><img src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/kronothon.jpg" class="rounded mt-4" alt="Cinque Terre" width=100%></a>
+        <div class="card mt-4">
+          <div class="card-header" id="notes">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-info" data-toggle="collapse" data-target="#collapseNotes" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="fas fa-sticky-note"></i> Read Our Notes
+              </button>
+            </h5>
+          </div>
+          <div id="collapseNotes" class="collapse show" aria-labelledby="notes" data-parent="#accordion">
+            <div class="card-body">
+              <ol>
+                <li><a href="#" class="text-dark">Cras justo odio</a></li>
+                <li><a href="#" class="text-dark">Dapibus ac facilisis in</a></li>
+                <li><a href="#" class="text-dark">Morbi leo risus</a></li>
+                <li><a href="#" class="text-dark">Porta ac consectetur ac</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="card-header" id="discussion">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-info" data-toggle="collapse" data-target="#collapseDiscussion" aria-expanded="false" aria-controls="collapseThree">
+                <i class="fab fa-discourse"> </i> Discussion Form
+              </button>
+            </h5>
+          </div>
+          <div id="collapseDiscussion" class="collapse show" aria-labelledby="discussion" data-parent="#accordion">
+            <div class="card-body">
+              <ol>
+                <li><a href="#" class="text-dark">Cras justo odio</a></li>
+                <li><a href="#" class="text-dark">Dapibus ac facilisis in</a></li>
+                <li><a href="#" class="text-dark">Morbi leo risus</a></li>
+                <li><a href="#" class="text-dark">Porta ac consectetur ac</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="card-header" id="bookmarks">
+            <h5 class="mb-0">
+            <button class="btn btn-link text-info" data-toggle="collapse" data-target="#collapseBookmarks" aria-expanded="true" aria-controls="collapseOne">
+              <i class="fas fa-bookmark" data-toggle="tooltip" data-placement="top" title="Bookmarks"> </i> Bookmarks
+            </button>
+            </h5>
+          </div>
+          <div id="collapseBookmarks" class="collapse show" aria-labelledby="bookmarks" data-parent="#accordion">
+            <div class="card-body">
+              <ol>
+                <li><a href="#" class="text-dark">Cras justo odio</a></li>
+                <li><a href="#" class="text-dark">Dapibus ac facilisis in</a></li>
+                <li><a href="#" class="text-dark">Morbi leo risus</a></li>
+                <li><a href="#" class="text-dark">Porta ac consectetur ac</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="card-header" id="trends">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-info" data-toggle="collapse" data-target="#collapseTrends" aria-expanded="true" aria-controls="collapsefour">
+               <i class="fab fa-studiovinari"></i> Trends
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTrends" class="collapse show" aria-labelledby="trends" data-parent="#accordion">
+            <div class="card-body">
+              <ol>
+                <li><a href="#" class="text-dark">Cras justo odio</a></li>
+                <li><a href="#" class="text-dark">Dapibus ac facilisis in</a></li>
+                <li><a href="#" class="text-dark">Morbi leo risus</a></li>
+                <li><a href="#" class="text-dark">Porta ac consectetur ac</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-4">
+          <div class="card-header" id="notifications">
+            <h5 class="mb-0">
+              <button class="btn btn-link text-info" data-toggle="collapse" data-target="#collapseNotifs" aria-expanded="true" aria-controls="collapsefive">
+               <i class="fas fa-bell"></i> Notifications
+              </button>
+            </h5>
+          </div>
+          <div id="collapseNotifs" class="collapse show" aria-labelledby="notifications" data-parent="#accordion">
+            <div class="card-body">
+              <ol>
+                <li><a href="#" class="text-dark">Cras justo odio</a></li>
+                <li><a href="#" class="text-dark">Dapibus ac facilisis in</a></li>
+                <li><a href="#" class="text-dark">Morbi leo risus</a></li>
+                <li><a href="#" class="text-dark">Porta ac consectetur ac</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div><!-- right sidebar ends -->
+    </div> <!-- body row ends -->
+  </div> <!-- body container ends -->
+
+  <div class="container-fluid bg-light text-dark mt-5">
+    <div class="container p-5 text-center">
+      <div class="row">
+        <div class="col-md-4 pb-3">
+          <img src="https://hackerearth.global.ssl.fastly.net/static/hackerearth/images/logo/HE_logo.png" width="200px">
+          <div class="text-muted">(415) 900-4023</div>
+          <a href="mailto:support@hackerrank.com" class="text-muted">support@hackerrank.com</a><br/>
+          <span class="text-muted">&copy;2018</span>
+        </div>
+
+        <!-- link-lists -->
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-3">
+              <ul class="list-unstyled text-white">
+                <dt class=" text-muted">Resources</dt>
+                <li><a class="text-dark text-muted" href="#">APIs</a></li>
+                <li><a class="text-dark text-muted" href="#">Guides</a></li>
+                <li><a class="text-dark text-muted" href="#">Videos</a></li>
+                <li><a class="text-dark text-muted" href="#">Partners</a></li>
+                <li><a class="text-dark text-muted" href="#">Events</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                <dt class=" text-muted">Companies</dt>
+                <li><a class="text-dark text-muted" href="#">Solutions</a></li>
+                <li><a class="text-dark text-muted" href="#">Customers</a></li>
+                <li><a class="text-dark text-muted" href="#">Pricing</a></li>
+                <li><a class="text-dark text-muted" href="#">Try for free</a></li>
+                <li><a class="text-dark text-muted" href="#">Terms of service</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                <dt class=" text-muted">Developers</dt>
+                <li><a class="text-dark text-muted" href="#">Scoring</a></li>
+                <li><a class="text-dark text-muted" href="#">Environment</a></li>
+                <li><a class="text-dark text-muted" href="#">FAQ</a></li>
+                <li><a class="text-dark text-muted" href="#">For schools</a></li>
+                <li><a class="text-dark text-muted" href="#">Sign up</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                <dt class=" text-muted">Companies</dt>
+                <li><a class="text-dark text-muted" href="#">About Us</a></li>
+                <li><a class="text-dark text-muted" href="#">Careers</a></li>
+                <li><a class="text-dark text-muted" href="#">Blog</a></li>
+                <li><a class="text-dark text-muted" href="#">Privacy Policy</a></li>
+                <li><a class="text-dark text-muted" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- link list ends -->
+      </div><!-- container row ends -->
+    </div> <!-- container ends -->
+  </div> <!-- container-fluid ends -->
+
+  <!-- Login/SignUp Modal -->
+  <div class="modal fade" id="loginForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="form-signin">
+            <div class="form-label-group">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <label for="inputEmail">Email address</label>
+            </div>
+
+            <div class="form-label-group">
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              <label for="inputPassword">Password</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-success">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- login modal ends -->
+</body>
+</html>
