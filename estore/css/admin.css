@@ -1,0 +1,166 @@
+.admin-options-container{
+  /* border-right: 1px solid grey; */
+}
+.admin-options-list li{
+  background: #e9ecef;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.admin-options-list li a{
+  text-decoration: none;
+  color: #6c757d;
+}
+.admin-options-list li a:hover{
+  text-decoration: none;
+}
+.list-group-item.active-item{
+  background-color: #999;
+}
+.list-group-item.active-item a{
+  color: white;
+}
+/*--------------- for categories list -----------*/
+.categories-list{
+  background: #fafafa;
+}
+.collapsible-list{
+  display: none;
+}
+ul .style-none{
+  list-style: none;
+}
+.icon::before{
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f067";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  padding-right: 10px;
+  color: #6c757d;
+  cursor: pointer;
+}
+.plus::before{
+  content: "\f067";
+}
+.minus::before{
+  content: "\f068";
+}
+.categories-list li{
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  display: block;
+}
+
+/* for import categories ---------------------------*/
+.import-category-button{
+  float: right;
+  padding: 2px 15px;
+}
+.category-name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+}
+.modal-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+.product-container{
+  border: 1px solid #17a2b8bb;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0 7px 20px 7px;
+}
+.product-image{
+  height: 80px;
+  width: 80px;
+  box-sizing: border-box;
+  padding: 7px;
+  padding-bottom: 12px;
+  display: block;
+  margin: auto;
+}
+.product-name-container{
+  background-color: #eee;
+  padding: 10px 0;
+  margin: 0px;
+  border-radius: 0.25rem;
+}
+.product-name{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.add-product-button{
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* for number of products to add form */
+form.number-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form.number-form #decrease {
+  margin-right: -4px;
+  border-radius: 0.25rem 0 0 0.25rem;
+  width: 33%;
+}
+
+form.number-form #increase {
+  margin-left: -4px;
+  border-radius: 0 0.25rem 0.25rem 0;
+  width: 33%;
+}
+
+form.number-form input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  max-width: 33%;
+  height: 40px;
+  position: relative;
+  top: 3px;
+}
+
+form.number-form input[type=number]::-webkit-inner-spin-button,
+form.number-form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+label, .price-form-container input{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}

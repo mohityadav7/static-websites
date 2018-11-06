@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    },
+    {
+      "name": "Product Name",
+      "image-link": "https://mohityadav7.github.io/estore/images/products/grocery.svg"
+    }
+  ]
+}

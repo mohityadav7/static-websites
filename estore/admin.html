@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./css/admin.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Poppins" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <title>Admin Area</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-md-3">
+          <div class="admin-options-contaner py-4 px-2">
+            <ul class="list-group admin-options-list">
+              <li class="list-group-item sidebar-d-toggle active-item"><a href="">Add Category</a></li>
+              <li class="list-group-item sidebar-d-toggle"><a href="">Add Sub-category</a></li>
+              <li class="list-group-item sidebar-d-toggle"><a href="">Add Product</a></li>
+              <li class="list-group-item sidebar-d-toggle"><a href="">Show All Categories</a></li>
+              <li class="list-group-item sidebar-d-toggle"><a href="">Import Category</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+          <!-- add category -->
+          <div class="form-container p-4 d-toggle" id="add-category">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Add Category</li>
+              </ol>
+            </nav>
+            <form action="">
+              <div class="form-group">
+                <label for="categoryName">Category Name</label>
+                <input type="text" class="form-control" id="categoryName" placeholder="Category Name">
+              </div>
+              <div class="form-group">
+                <label for="categoryDescription">Description</label>
+                <textarea class="form-control" id="categoryDescription" rows="3" placeholder="Category Description"></textarea>
+              </div>
+              <input type="submit" class="btn btn-outline-info" value="Add Category">
+            </form>
+          </div>
+
+          <!-- add sub category -->
+          <div class="form-container p-4 d-toggle" id="add-sub-category">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Add Sub Category</li>
+              </ol>
+            </nav>
+            <form action="">
+              <div class="form-group">
+                <label for="categoryName">Sub Category Name</label>
+                <input type="text" class="form-control" id="categoryName" placeholder="Category Name">
+              </div>
+              <div class="form-group">
+                <label for="">Parent Category</label>
+                <select class="form-control" id="categoryName">
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                  <option>Category 3</option>
+                  <option>Category 4</option>
+                  <option>Category 5</option>
+                </select>
+              </div>
+              <input type="submit" class="btn btn-outline-info" value="Add Sub Category">
+            </form>
+          </div>
+
+          <!-- add a product -->
+          <div class="form-container p-4 d-toggle" id="add-product">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Add Product</li>
+              </ol>
+            </nav>
+            <form action="">
+              <div class="form-group">
+                <label for="categoryName">Product Name</label>
+                <input type="text" class="form-control" id="categoryName" placeholder="Category Name">
+              </div>
+              <div class="form-group">
+                <label for="">Category</label>
+                <select class="form-control" id="categoryName">
+                  <option>Category 1</option>
+                  <option>Category 2</option>
+                  <option>Category 3</option>
+                  <option>Category 4</option>
+                  <option>Category 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Sub Category</label>
+                <select class="form-control" id="categoryName">
+                  <option>Sub Category 1</option>
+                  <option>Sub Category 2</option>
+                  <option>Sub Category 3</option>
+                  <option>Sub Category 4</option>
+                  <option>Sub Category 5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="categoryDescription">Description</label>
+                <textarea class="form-control" id="categoryDescription" rows="3" placeholder="Product Description"></textarea>
+              </div>
+              <input type="submit" class="btn btn-outline-info" value="Add Product">
+            </form>
+          </div>
+
+          <!-- show all categories -->
+          <div class="p-4 d-toggle" id="show-all-categories">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Show All Categories</li>
+              </ol>
+            </nav>
+            <!-- categories list -->
+            <div class="categories-list-container">
+              <ul class="style-none categories-list">
+                <li class="list-toggle">
+                  <span class="icon plus"></span>
+                  List heading 1
+                </li>
+                <ul class="collapsible-list">
+                  <li class="collapsible-list-item">List item 1</li>
+                  <li class="collapsible-list-item">List item 2</li>
+                  <li class="list-toggle">
+                    <span class="icon plus"></span>
+                    List heading 2
+                  </li>
+                  <ul class="collapsible-list">
+                    <li class="collapsible-list-item">List item 1</li>
+                    <li class="collapsible-list-item">List item</li>
+                  </ul>
+                </ul>
+
+                <li class="collapsible-list-item">List empty item 3</li>
+
+                <li class="list-toggle">
+                  <span class="icon plus"></span>
+                  List heading 3
+                </li>
+                <ul class="collapsible-list">
+                  <li class="collapsible-list-item">List item 1</li>
+                  <li class="collapsible-list-item">List item 2</li>
+                  <li class="list-toggle">
+                    <span class="icon plus"></span>
+                    list heading 4
+                  </li>
+                  <ul class="collapsible-list">
+                    <li class="collapsible-list-item">List item 1</li>
+                    <li class="collapsible-list-item">List item 2</li>
+                  </ul>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <!-- Import category -->
+          <div class="form-container p-4 d-toggle" id="import-category">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Import Category</li>
+              </ol>
+            </nav>
+            <div class="categories-list-container">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <span class="category-name">Category 1</span>
+                  <button class="btn btn-outline-info import-category-button" type="button" data-toggle="modal" data-target=".products-modal">Import</button>
+                </li>
+                <li class="list-group-item">
+                  <span class="category-name">Category 2</span>
+                  <button class="btn btn-outline-info import-category-button" type="button" data-toggle="modal" data-target=".products-modal">Import</button>
+                </li>
+                <li class="list-group-item">
+                  <span class="category-name">Category 3</span>
+                  <button class="btn btn-outline-info import-category-button" type="button" data-toggle="modal" data-target=".products-modal">Import</button>
+                </li>
+                <li class="list-group-item">
+                  <span class="category-name">Category 4</span>
+                  <button class="btn btn-outline-info import-category-button" type="button" data-toggle="modal" data-target=".products-modal">Import</button>
+                </li>
+                <li class="list-group-item">
+                  <span class="category-name">Category 5</span>
+                  <button class="btn btn-outline-info import-category-button" type="button" data-toggle="modal" data-target=".products-modal">Import</button>
+                </li>
+              </ul>
+            </div>
+            <!-- modal for showing products -->
+            <div class="modal fade products-modal" tabindex="-1" role="dialog" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Add products to this category</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="products-to-add-container">
+                      <div class="row no-gutters" id="products-row">
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- contains one single product -->
+                        <div class="col-md-4 product-column">
+                          <!-- product contaner -->
+                          <div class="product-container">
+                            <div class="product-image-container">
+                              <img src="./images/products/milk.svg" alt="product image" class="product-image">
+                            </div>
+                            <div class="product-lower-content">
+                              <div class="product-name-container">
+                                <h5 class="product-name">Product Name</h5>
+                              </div>
+                              <div class="number-form-container">
+                                <form class="number-form">
+                                  <label for="number">Items available</label>
+                                  <div>
+                                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                                    <input type="number" id="number" value="0" />
+                                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="price-form-container">
+                                <div class="form-group">
+                                  <label for="mrp-input">Price</label>
+                                  <input type="text" class="form-control" id="price-input" placeholder="Enter Price">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mrp-input">MRP</label>
+                                  <input type="text" class="form-control" id="mrp-input" placeholder="Enter MRP">
+                                </div>
+                              </div>
+                              <input class="add-product-button btn btn-outline-info" type="submit" name="add" value="Add Product">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="./scripts/admin.js"></script>
+    <!-- //JavaScript -->
+  </body>
+</html>

@@ -1,0 +1,38 @@
+$(document).ready(function(){
+  // initialize owl carousel
+  $('.offers-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      nav:false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  });
+
+  $('.products-carousel').owlCarousel({
+      margin:0,
+      nav:true,
+      nav:false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:4
+          }
+      }
+  });
+});
