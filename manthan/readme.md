@@ -7,9 +7,8 @@ Front-end of Manan's entrance test Manthan which mainly contains a registeration
 * bootstrap
 
 ### Preview
-* [Home/Register](mohityadav7.github.io/JustFrontEnd/manthan/manthan.html)
-* [Leaderboard](mohityadav7.github.io/JustFrontEnd/manthan/leaderboard.html)
-* [Leaderboard-home](mohityadav7.github.io/JustFrontEnd/manthan/leaderboard-home.html)
-* [Thank-you](mohityadav7.github.io/JustFrontEnd/manthan/thank-you.html)
-* [404](mohityadav7.github.io/JustFrontEnd/manthan/404.html)
-Because all pages are not linked with hyperlink.
+* [Home/Register](https://mohityadav7.github.io/JustFrontEnd/manthan/manthan.html)
+* [Leaderboard](https://mohityadav7.github.io/JustFrontEnd/manthan/leaderboard.html)
+* [Leaderboard-home](https://mohityadav7.github.io/JustFrontEnd/manthan/leaderboard-home.html)
+* [Thank-you](https://mohityadav7.github.io/JustFrontEnd/manthan/thank-you.html)
+* [404](https://mohityadav7.github.io/JustFrontEnd/manthan/404.html)
