@@ -1,7 +1,7 @@
 /*------ global -----*/
 * {
   margin: 0;
-  padding: 0
+  padding: 0;
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
@@ -20,10 +20,6 @@
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
-}
-
-section{
-  /* margin: 0 0 100px 0; */
 }
 
 .services-img-container{
@@ -128,7 +124,7 @@ section{
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; // remove the gap so it doesn't close
+    margin-top: 0; /* remove the gap so it doesn't close */
  }
 
 
