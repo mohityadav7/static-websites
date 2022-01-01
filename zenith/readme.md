@@ -9,4 +9,4 @@
 * jQuery
 
 ### Preview
-Preview available at https://mohityadav7.github.io/JustFrontEnd/zenith/index.html and http://hackzenith.tech/
+Preview available at https://mohityadav7.github.io/static-websites/zenith/index.html and http://hackzenith.tech/

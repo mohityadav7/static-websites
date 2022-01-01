@@ -9,4 +9,4 @@ Front-end of a service providing website.
 * jQuery
 
 ### Preview
-Preview available at https://mohityadav7.github.io/JustFrontEnd/eservices/index.html
+Preview available at https://mohityadav7.github.io/static-websites/eservices/index.html

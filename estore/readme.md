@@ -7,7 +7,7 @@ Simple front-end of a e-commerce website which was not completed.
 * js
 
 ### Preview
-* [Home](https://mohityadav7.github.io/JustFrontEnd/estore/index.html)
-* [Admin](https://mohityadav7.github.io/JustFrontEnd/estore/admin.html)
-* [Login](https://mohityadav7.github.io/JustFrontEnd/estore/login.html)
-* [Register](https://mohityadav7.github.io/JustFrontEnd/estore/register.html)
+* [Home](https://mohityadav7.github.io/static-websites/estore/index.html)
+* [Admin](https://mohityadav7.github.io/static-websites/estore/admin.html)
+* [Login](https://mohityadav7.github.io/static-websites/estore/login.html)
+* [Register](https://mohityadav7.github.io/static-websites/estore/register.html)

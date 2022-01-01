@@ -8,4 +8,4 @@ Task of the week (Feb 5 - Feb 11) of [CodeShala](http://codeshala.org)'s NodeJs 
 * Bootstrap 4
 
 ### Preview
-Preview available at https://mohityadav7.github.io/JustFrontEnd/hackerverse/index.html
+Preview available at https://mohityadav7.github.io/static-websites/hackerverse/index.html

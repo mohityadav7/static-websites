@@ -10,4 +10,4 @@ This clone includes 5 main pages namely home, resources, tech, contact and about
 * jQuery
 
 ### Preview
-Preview available at https://mohityadav7.github.io/JustFrontEnd/pythian-clone/index.html
+Preview available at https://mohityadav7.github.io/static-websites/pythian-clone/index.html
