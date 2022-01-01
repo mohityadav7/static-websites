@@ -57,4 +57,4 @@ Preview available at https://mohityadav7.github.io/JustFrontEnd/ideathon/index.h
 
 ### ipl website
 Partial clone of homepage of ipl t20 website. Built during web dev content in Elements Culmyca '18.
-Preview available at https://mohityadav7.github.io/JustFrontEnd/index.html
+Preview available at https://mohityadav7.github.io/JustFrontEnd/ipl-website-2018/index.html
